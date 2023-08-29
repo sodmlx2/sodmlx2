@@ -1,5 +1,9 @@
 # sodmlx2.github.io
 
 ### Projects
-* https://github.com/sodmlx2/armx-tool
+* :fire: https://github.com/sodmlx2/armx-tool
+* :fire: https://github.com/sodmlx2/NFIQ2
+
+### Contribution
+* :fire: https://fosstrak.github.io/epcis/team-list.html
 
