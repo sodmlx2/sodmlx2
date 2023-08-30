@@ -1,9 +1,9 @@
 # sodmlx2.github.io
 
 ### Projects
-* :fire: https://github.com/sodmlx2/armx-tool **BASH**
-* :fire: https://github.com/sodmlx2/interp-comp **C++**
+* :fire: https://github.com/sodmlx2/armx-tool
+* :fire: https://github.com/sodmlx2/interp-comp
 
 ### Contribution
-* :fire: https://fosstrak.github.io/epcis/team-list.html **JAVA**
+* :fire: https://fosstrak.github.io/epcis/team-list.html
 
