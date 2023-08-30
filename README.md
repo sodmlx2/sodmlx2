@@ -4,6 +4,6 @@
 * :fire: https://github.com/sodmlx2/armx-tool
 * :fire: https://github.com/sodmlx2/interp-comp
 
-### Contribution
+### Contributions
 * :fire: https://fosstrak.github.io/epcis/team-list.html
 
