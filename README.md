@@ -7,3 +7,6 @@
 ### Contributions
 * :fire: https://fosstrak.github.io/epcis/team-list.html
 
+### Community
+* :fire: https://github.com/sodmlx2/cora-hackerspace
+
