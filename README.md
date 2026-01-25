@@ -8,5 +8,5 @@
 * :fire: https://fosstrak.github.io/epcis/team-list.html
 
 ### Community
-* :fire: https://github.com/sodmlx2/cora-hackerspace
+* :fire: https://sodmlx2.github.io/cora-hackerspace
 
