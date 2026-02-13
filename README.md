@@ -1,4 +1,4 @@
-# [🐧:](https://www.linkedin.com/in/marcoaureliob)
+# [🐧 marcoaureliob](https://www.linkedin.com/in/marcoaureliob)
 
 ### My recent personal projects for studying!
 * https://github.com/sodmlx2/armx-tool
