@@ -7,7 +7,3 @@
 
 ### Contributions.
 * https://fosstrak.github.io/epcis/team-list.html
-
-### Community Brazil.
-* https://sodmlx2.github.io/cora-hackerspace
-
