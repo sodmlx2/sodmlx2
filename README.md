@@ -1,12 +1,13 @@
 # sodmlx2.github.io
 
-### Projects
-* :fire: https://github.com/sodmlx2/armx-tool
-* :fire: https://github.com/sodmlx2/linux-slack15-setup
+### My recent personal projects for studying!
+* 🤟: https://github.com/sodmlx2/armx-tool
+* 🐧: https://github.com/sodmlx2/linux-slack15-setup
+* 🔥: https://github.com/sodmlx2/meta-iot2000
 
-### Contributions
+### Contributions.
 * :fire: https://fosstrak.github.io/epcis/team-list.html
 
-### Community
+### Community Brazil.
 * :fire: https://sodmlx2.github.io/cora-hackerspace
 
