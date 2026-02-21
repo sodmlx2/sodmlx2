@@ -1,6 +1,6 @@
-# [🐧 marcoaureliob](https://www.linkedin.com/in/marcoaureliob)
+# [marcoaureliob](https://www.linkedin.com/in/marcoaureliob)
 
-### My recent personal projects for studying!
+### Personal Projects for Skill Development
 * https://github.com/sodmlx2/armx-tool
 * https://github.com/sodmlx2/linux-slack15-setup
 * https://github.com/sodmlx2/meta-iot2000
