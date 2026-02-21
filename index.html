@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sodmlx2 | Root Shell</title>
+    <title>Sodmlx2 | Root Shell Blog</title>
     <style>
         body {
             background-color: #000;
@@ -18,76 +18,74 @@
             min-height: 100vh;
         }
 
-        /* Fundo Matrix */
         #matrix {
             position: fixed;
             top: 0;
             left: 0;
             z-index: -1;
-            opacity: 0.2;
+            opacity: 0.15;
         }
 
         .terminal {
-            background: rgba(0, 0, 0, 0.9);
+            background: rgba(0, 0, 0, 0.85);
             border: 1px solid #00ff41;
             width: 90%;
-            max-width: 800px;
+            max-width: 900px;
+            height: 80vh; /* Altura fixa para parecer um console */
             padding: 25px;
             box-shadow: 0 0 20px rgba(0, 255, 65, 0.2);
             position: relative;
+            overflow-y: auto; /* Scroll interno caso o blog cresça */
         }
 
-        h1, h2, h3 {
-            text-transform: uppercase;
-            letter-spacing: 2px;
+        /* Custom Scrollbar para manter o estilo */
+        .terminal::-webkit-scrollbar { width: 8px; }
+        .terminal::-webkit-scrollbar-thumb { background: #00ff41; }
+
+        h1 { font-size: 1.4rem; border-bottom: 2px solid #00ff41; padding-bottom: 10px; }
+        h2 { font-size: 1.1rem; color: #fff; margin-top: 30px; text-transform: uppercase; }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
         }
 
-        h1 { font-size: 1.2rem; margin-bottom: 30px; }
-        h3 { font-size: 1rem; color: #fff; border-bottom: 1px solid #00ff41; display: inline-block; margin-top: 25px; }
-
-        .list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .list li {
-            margin: 12px 0;
-            display: flex;
-            align-items: center;
-        }
-
-        .list li::before {
-            content: "> ";
-            margin-right: 10px;
-        }
-
-        a {
+        .post-link {
+            border: 1px dashed #00ff41;
+            padding: 10px;
+            display: block;
             color: #00ff41;
             text-decoration: none;
-            transition: all 0.3s;
+            transition: 0.3s;
         }
 
-        a:hover {
+        .post-link:hover {
             background: #00ff41;
             color: #000;
-            padding: 0 5px;
+            font-weight: bold;
         }
 
-        .blink {
-            animation: blinker 1s linear infinite;
+        .status-bar {
+            background: #00ff41;
+            color: #000;
+            padding: 2px 10px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            font-size: 0.8rem;
         }
 
-        @keyframes blinker {
-            50% { opacity: 0; }
-        }
+        .blink { animation: blinker 1s linear infinite; }
+        @keyframes blinker { 50% { opacity: 0; } }
 
-        /* Scanline effect */
+        /* Efeito de Scanline */
         .terminal::after {
             content: "";
             position: absolute;
             top: 0; left: 0; width: 100%; height: 100%;
-            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-            background-size: 100% 2px, 3px 100%;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.1) 50%);
+            background-size: 100% 4px;
             pointer-events: none;
         }
     </style>
@@ -98,27 +96,45 @@
 
     <div class="terminal">
         <header>
-        
+            <div class="status-bar">SYSTEM STATUS: ONLINE | USER: ROOT | LOGGED_IN: YES</div>
+            <h1>> SODMLX2_ARCHIVE_v2.0</h1>
+            <p>Selecione um tópico para extrair dados...<span class="blink">_</span></p>
         </header>
 
-        <section><!--
-            <h3>### Projects</h3>
-            <ul class="list">
-                <li>🔥 <a href="https://github.com/sodmlx2/armx-tool" target="_blank">armx-tool</a></li>
-                <li>🔥 <a href="https://github.com/sodmlx2/interp-comp" target="_blank">interp-comp</a></li>
-            </ul>-->
-
-          
+        <section>
+            <h2>### CATEGORIES_</h2>
+            <div class="category-grid">
+                <a href="#punkrock" class="post-link">[ 01 ] PUNK_ROCK</a>
+                <a href="#hacking" class="post-link">[ 02 ] CYBER_SECURITY</a>
+                <a href="#coding" class="post-link">[ 03 ] SOURCE_CODE</a>
+                <a href="#philosophy" class="post-link">[ 04 ] PHILOSOPHY</a>
+            </div>
         </section>
 
-        <footer style="margin-top: 40px; font-size: 0.7rem; color: #444;">
-           
+        <section id="posts">
+            <h2>### LATEST_ENTRIES_</h2>
+            
+            <article id="punkrock" style="margin-bottom: 30px; border-left: 3px solid #00ff41; padding-left: 15px;">
+                <h3 style="color: #fff;">// TOPIC: PUNK_ROCK</h3>
+                <p>O movimento punk não morreu, apenas se tornou digital. A ética DIY (Do It Yourself) é a base do open source.</p>
+                <a href="#">[ READ_MORE ]</a>
+            </article>
+
+            <article id="hacking" style="margin-bottom: 30px; border-left: 3px solid #00ff41; padding-left: 15px;">
+                <h3 style="color: #fff;">// TOPIC: CYBER_SECURITY</h3>
+                <p>Análise de vulnerabilidades em sistemas embarcados e a importância da criptografia ponta-a-ponta.</p>
+                <a href="#">[ READ_MORE ]</a>
+            </article>
+        </section>
+
+        <footer style="margin-top: 50px; border-top: 1px solid #444; padding-top: 10px; font-size: 0.8rem; color: #666;">
+            EOF - End Of File
         </footer>
     </div>
 
     <script>
         const canvas = document.getElementById('matrix');
-        const ctx = canvas.getContext('center') || canvas.getContext('2d');
+        const ctx = canvas.getContext('2d');
 
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
@@ -131,23 +147,18 @@
         function draw() {
             ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
             ctx.fillRect(0, 0, canvas.width, canvas.height);
-
             ctx.fillStyle = "#0F0";
             ctx.font = fontSize + "px monospace";
 
             for (let i = 0; i < drops.length; i++) {
                 const text = letters.charAt(Math.floor(Math.random() * letters.length));
                 ctx.fillText(text, i * fontSize, drops[i] * fontSize);
-
-                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
-                    drops[i] = 0;
-                }
+                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) drops[i] = 0;
                 drops[i]++;
             }
         }
 
         setInterval(draw, 33);
-
         window.addEventListener('resize', () => {
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
